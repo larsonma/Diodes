@@ -1,0 +1,22 @@
+*********************************************
+* Filename: mar7p2.cir
+* Author: larsonma@msoe.edu <Mitchell Larson>
+* Data: 7 march 2018
+* Provides:
+* - a time based transient simulation of a 
+* - typical EE2060 circuit
+*********************************************
+
+V1 1 0 SIN(0,120,60)
+R1 1 2 100
+R2 2 0 1000
+R3 2 3 600
+C1 3 0 2N
+RL 3 0 200
+
+*** COMMAND SPICE TO DO TRANSIENT SIMULATION
+
+*DR M DOES 1/10 TO 1/100 OF BASE UNIT AS STEP
+.TRAN 0.01M 34M
+.PROBE
+.END

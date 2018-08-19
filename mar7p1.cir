@@ -1,0 +1,21 @@
+*******************************************************
+* Filename: mar7p1.cir
+* Author: larsonma@msoe.edu <Mitchell Larson>
+* Date: 7 march 2018
+* Provides: 
+* - solution to a typical EE2050 problem
+* - hand solution gave VA = 2.0199 VB = 1.7249
+*******************************************************
+
+*** Describe the circuit
+V1 1 0 DC 16
+R1 1 A 66
+R2 A 0 10
+R3 A B 30
+R4 B 0 67
+R5 B 2 99
+V2 2 0 DC 3.3
+
+*** command spice to do operating point
+.OP
+.END
